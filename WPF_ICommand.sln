@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_ICommand", "WPF_IComman
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_ICommand_2", "WPF_ICommand_2\WPF_ICommand_2.csproj", "{F14E8CDD-4F70-4694-A013-3638CC8810A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICommand_3", "ICommand_3\ICommand_3.csproj", "{73D57480-6C92-45A7-9FF8-4AB8F806F876}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_ICommand_3", "ICommand_3\WPF_ICommand_3.csproj", "{73D57480-6C92-45A7-9FF8-4AB8F806F876}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
