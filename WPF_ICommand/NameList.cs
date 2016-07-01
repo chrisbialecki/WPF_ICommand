@@ -39,6 +39,14 @@ namespace WPF_ICommand
         }
 
 
+        //command instance and property
+        InfoCommand _infoCommand = new InfoCommand();
+        public InfoCommand InformationCommand
+        {
+            get { return _infoCommand; }
+        }
+
+
         // variables
         string _firstName = "";
         string _lastName = "";
