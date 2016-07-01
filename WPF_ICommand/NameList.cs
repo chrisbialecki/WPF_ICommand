@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace WPF_ICommand
 {
@@ -24,6 +25,20 @@ namespace WPF_ICommand
             }
         }
 
+        //add command
+        AddCommand _addCommand = new AddCommand();
+        public AddCommand AddNameCommand
+        {
+            get { return _addCommand; }
+        }
+
+        //remove command
+        RemoveCommand _removeCommand = new RemoveCommand();
+        public RemoveCommand RemoveNameCommand
+        {
+            get { return _removeCommand; }
+        }
+
         //list
         public ObservableCollection<string> Names
         {
@@ -36,6 +51,7 @@ namespace WPF_ICommand
         public NameList()
         {
             Names = new ObservableCollection<string>();
+            MessageBox.Show("Hi from NameList constructor");
         }
 
 
