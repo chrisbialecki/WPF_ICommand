@@ -23,6 +23,7 @@ namespace WPF_ICommand
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new NameList();
         }
     }
 }
