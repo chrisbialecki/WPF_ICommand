@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace WPF_ICommand
@@ -24,13 +25,14 @@ namespace WPF_ICommand
            var nameList = parameter as NameList;
            return nameList != null
                && !string.IsNullOrWhiteSpace(nameList.FirstName)
-               && !string.IsNullOrWhiteSpace(nameList.LastName);
+               && !string.IsNullOrWhiteSpace(nameList.LastName);         
 
        }
 
        public event EventHandler CanExecuteChanged
        {
-           add { CommandManager.RequerySuggested += value; }
+           add { CommandManager.RequerySuggested += value; }          
+           
            remove { CommandManager.RequerySuggested -= value; }
        }
     }
