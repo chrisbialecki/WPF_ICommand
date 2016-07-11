@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace WPF_ICommand
@@ -18,6 +19,7 @@ namespace WPF_ICommand
 
         public bool CanExecute(object parameter)
         {
+           
             var nameList = parameter as NameList;
             return nameList != null && nameList.SelectedName != null;
         }
